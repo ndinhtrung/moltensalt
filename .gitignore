@@ -2,4 +2,4 @@
 *.e*
 *.csv
 .vscode
-.txt
+*.txt
