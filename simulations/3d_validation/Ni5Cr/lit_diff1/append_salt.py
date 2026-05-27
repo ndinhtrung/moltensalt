@@ -6,7 +6,7 @@ import datetime
 from string import Template
 import re
 
-file_name = 'EBSD_IC_1.txt'
+file_name = 'Ni5Cr_3.txt'
 header_size = 24
 
 salt_dim = "Z"
