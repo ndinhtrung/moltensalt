@@ -7,7 +7,7 @@ from string import Template
 import re
 
 file_name = 'Ni5Cr_3.txt'
-header_size = 24
+header_size = 26
 
 salt_dim = "Z"
 salt_thickness = 10 #um
