@@ -15,7 +15,7 @@ bias = 1e-6
 
 print(f"Reading {file_name}...")
 with open(file_name) as raw_file:
-    header_list = [next(raw_file) for i in range(header_size) ]
+    header_list = [next(raw_file) for i in range(header_size)]
     points = raw_file.read()
 print("File loaded.")
 
@@ -68,7 +68,7 @@ for i in range(total):
     line = " ".join([phi1, phi2, phi3, str(x), str(y), str(z), feature_id, P_id, symmetry] )
     S += line + "\n"
     if (i + 1) % milestone == 0:
-        print(f"  {i + 1:,} / {total:,} ({100*(i+1)//total}%)")
+        print(f"  {i + 1:,} / {total:,} ({100 * (i + 1) // total}%)")
 
 print(f"Writing salt_appended.txt...")
 with open("salt_appended.txt",'w+') as write_file:
