@@ -15,7 +15,7 @@ Usage:
     python dream3d_to_ebsd_txt.py input.dream3d [output.txt]
 
 The data container and symmetry value can be overridden:
-    python dream3d_to_ebsd_txt.py input.dream3d --container SyntheticVolumeDataContainer --symmetry 24
+    python dream3d_to_ebsd_txt.py input.dream3d --container SyntheticVolumeDataContainer --symmetry 43
 """
 
 import sys
@@ -25,7 +25,7 @@ from pathlib import Path
 
 # Default HDF5 paths (matched from inspect output)
 DEFAULT_CONTAINER  = "SyntheticVolumeDataContainer"
-DEFAULT_SYMMETRY   = "24"   # Oh / cubic — change if needed
+DEFAULT_SYMMETRY   = "43"   # Oh / cubic — change if needed
 DEFAULT_P_ID       = "0"
 
 
