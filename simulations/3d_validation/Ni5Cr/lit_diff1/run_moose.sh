@@ -3,9 +3,9 @@
 
 #SBATCH --account=project_2004485
 #SBATCH --partition=medium
-#SBATCH --time=2:00:00
+#SBATCH --time=02:00:00
 
-#SBATCH --nodes=1
+#SBATCH --nodes=8
 #SBATCH --ntasks-per-node=8
 #SBATCH --cpus-per-task=16
 
@@ -30,7 +30,7 @@ cd $BASE_DIR
 echo Working in $PWD.
 echo
 
-srun --ntasks=$SLURM_NTASKS $MOOSE_DIR/$APP_NAME/$APP_NAME-opt -i ebsd_reader.i --n_threads=$SLURM_CPUS_PER_TASK
+srun $MOOSE_DIR/$APP_NAME/$APP_NAME-opt -i ebsd_reader.i
 
 echo
 echo Finished:
