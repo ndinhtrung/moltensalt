@@ -61,8 +61,9 @@ phi2 = str(0)
 phi3 = str(0)
 
 print("Appending salt points...")
-milestone = max(1, G.shape[0] // 1000)
-for i in range(G.shape[0]):
+total = G.shape[0]
+milestone = max(1, total // 1000)
+for i in range(total):
     x, y, z = G[i]
     line = " ".join([phi1, phi2, phi3, str(x), str(y), str(z), feature_id, P_id, symmetry] )
     S += line + "\n"
